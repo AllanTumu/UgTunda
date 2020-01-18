@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "564618442772",
+    "firebase_url": "https://ugtunda.firebaseio.com",
+    "project_id": "ugtunda",
+    "storage_bucket": "ugtunda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564618442772:android:1508c85f48a84d5436cf01",
+        "android_client_info": {
+          "package_name": "com.example.ugtunda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564618442772-070k9p7tuer9ed0knd7kupk5u7gvd39r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ugtunda",
+            "certificate_hash": "2f1cfaa7b2683bb3975b1a441ec718fc46496bb0"
+          }
+        },
+        {
+          "client_id": "564618442772-251gipakuh76qeito0u1ul25o8bb4aun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ9oFeg9JoExV0kcDsEFzpbHDus-iKScg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564618442772-251gipakuh76qeito0u1ul25o8bb4aun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
