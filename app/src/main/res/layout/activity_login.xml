@@ -14,9 +14,8 @@
         android:layout_height="100dp"
         android:src="@drawable/applogo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="195dp"
         />
-
 
     <EditText
         android:id="@+id/login_phone_number_input"
@@ -31,8 +30,7 @@
         android:inputType="number"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="17sp"
-        android:textStyle="bold"
+        android:textSize="19sp"
         />
 
 
@@ -46,20 +44,19 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
-        android:hint="number"
-        android:inputType="numberPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="17sp"
-        android:textStyle="bold"
+        android:textSize="19sp"
         />
-    
+
     <LinearLayout
         android:id="@+id/linear_layout_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/login_password_input"
+        android:layout_below="@+id/login_password_input"
         android:layout_marginTop="5dp"
         >
 
@@ -68,27 +65,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Material.Drawable.CheckBox"
-            android:text="Remember Me"
+            android:text="Remember me"
             android:textColor="@color/colorPrimaryDark"
             app:cbd_strokeColor="@color/colorPrimaryDark"
             android:gravity="center_vertical"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:textSize="18sp"
             android:layout_marginLeft="17dp"
-
             />
-
 
         <TextView
             android:id="@+id/forget_password_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password"
+            android:text="Forget Password?"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="80dp"
+            android:textSize="19sp"
+            android:layout_marginLeft="70dp"
             />
+
     </LinearLayout>
 
 
@@ -102,17 +96,18 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/buttons"
         android:padding="17dp"
-        android:text="Login"
         android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Login"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        />
 
 
     <TextView
         android:id="@+id/admin_panel_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I'm an Admin"
+        android:text="I'm an Admin?"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/login_button"
         android:textColor="@color/colorPrimaryDark"
@@ -122,18 +117,18 @@
         android:layout_marginEnd="23dp"
         />
 
+
     <TextView
         android:id="@+id/not_admin_panel_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I'm not an Admin"
+        android:text="I'm not an Admin?"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/login_button"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginLeft="80dp"
-        android:layout_marginEnd="23dp"
         android:layout_marginStart="25dp"
         android:visibility="invisible"
         />
