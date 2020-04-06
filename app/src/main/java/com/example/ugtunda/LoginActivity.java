@@ -107,7 +107,6 @@ public class LoginActivity extends AppCompatActivity
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
 
-
             AllowAccessToAccount(phone, password);
         }
     }
