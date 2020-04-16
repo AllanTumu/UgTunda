@@ -58,7 +58,7 @@ public class SearchProductActivity extends AppCompatActivity {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Products");
 
         FirebaseRecyclerOptions<Products> options = new  FirebaseRecyclerOptions.Builder<Products>()
-                .setQuery(reference.orderByChild("pname").startAt(searchInput).endAt(searchInput), Products.class)
+                .setQuery(reference.orderByChild("pname").startAt(searchInput), Products.class)
                 .build();
 
         FirebaseRecyclerAdapter<Products, ProductViewHolder> adapter = new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
