@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Admin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ugtunda.Models.Cart;
+import com.example.ugtunda.R;
 import com.example.ugtunda.ViewHolder.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ugtunda.HomeActivity;
+import com.example.ugtunda.MainActivity;
+import com.example.ugtunda.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 

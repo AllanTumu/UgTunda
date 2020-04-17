@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ugtunda.Admin.AdminCategoryActivity;
 import com.example.ugtunda.Models.Users;
 import com.example.ugtunda.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity
     private EditText InputPhoneNumber, InputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
-    private TextView AdminLink, NotAdminLink;
+    private TextView AdminLink, NotAdminLink, ForgotPasswordLink;
 
     private String parentDbName = "users";
     private CheckBox chkBoxRememberMe;
@@ -47,11 +48,21 @@ public class LoginActivity extends AppCompatActivity
         InputPhoneNumber = findViewById(R.id.login_phone_number_input);
         AdminLink = findViewById(R.id.admin_panel_link);
         NotAdminLink = findViewById(R.id.not_admin_panel_link);
+        ForgotPasswordLink = findViewById(R.id.forgot_password_link);
         loadingBar = new ProgressDialog(this);
 
 
         chkBoxRememberMe = findViewById(R.id.remember_me_chkb);
         Paper.init(this);
+
+        ForgotPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                intent.putExtra("check", "login");
+                startActivity(intent);
+            }
+        });
 
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
