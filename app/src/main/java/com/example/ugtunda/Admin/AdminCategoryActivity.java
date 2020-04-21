@@ -8,8 +8,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ugtunda.HomeActivity;
-import com.example.ugtunda.MainActivity;
+import com.example.ugtunda.Buyers.HomeActivity;
+import com.example.ugtunda.Buyers.MainActivity;
 import com.example.ugtunda.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {

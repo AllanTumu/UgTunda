@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ugtunda.Models.Cart;
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
 import com.example.ugtunda.ViewHolder.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

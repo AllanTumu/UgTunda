@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

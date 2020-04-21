@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ugtunda.Admin.AdminCategoryActivity;
 import com.example.ugtunda.Models.Users;
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

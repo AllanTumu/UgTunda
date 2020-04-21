@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.ugtunda.Admin.AdminMaintainProductsActivity;
 import com.example.ugtunda.Models.Products;
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
 import com.example.ugtunda.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

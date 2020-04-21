@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ugtunda.Models.Users;
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
+import com.example.ugtunda.Sellers.SellerRegistrationActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity
 {
     private Button joinNowButton, loginButton;
     private ProgressDialog loadingBar;
+    private TextView sellerBegin;
 
 
     @Override
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity
 
         joinNowButton = (Button) findViewById(R.id.main_join_now_button);
         loginButton = (Button) findViewById(R.id.main_login_button);
+        sellerBegin = (TextView) findViewById(R.id.seller_begin);
         loadingBar = new ProgressDialog(this);
 
 
@@ -47,6 +52,15 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sellerBegin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this, SellerRegistrationActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.ugtunda;
+package com.example.ugtunda.Buyers;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.ugtunda.Models.Products;
 import com.example.ugtunda.Prevalent.Prevalent;
+import com.example.ugtunda.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
