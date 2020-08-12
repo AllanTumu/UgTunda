@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ugtunda.Admin.AdminCategoryActivity;
+import com.example.ugtunda.Sellers.SellerProductCategoryActivity;
 import com.example.ugtunda.Models.Users;
 import com.example.ugtunda.Prevalent.Prevalent;
 import com.example.ugtunda.R;
@@ -155,7 +155,7 @@ public class LoginActivity extends AppCompatActivity
                                 Toast.makeText(LoginActivity.this, "Welcome Admin, you are logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, SellerProductCategoryActivity.class);
                                 startActivity(intent);
                             }
                             else if (parentDbName.equals("users"))
