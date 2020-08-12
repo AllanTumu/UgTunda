@@ -72,10 +72,14 @@ public class MainActivityTests {
     }
 
     /**Verify that user is taken to the right screen when they click the LoginButton*/
-//    @Test
-//    public void verifyActivity() {
-//        onView(withId(R.id.login_button))
-//                .check(matches(isDisplayed()))
-//                .check(matches(withText("Login")));
-//    }
+
+    @Test
+    public void testNavLoginActivity() {
+        onView(withId(R.id.main_login_button))
+                .perform(click());
+
+        onView(withId(R.id.login_layout))
+                .check(matches(isDisplayed()));
+    }
+
 }
